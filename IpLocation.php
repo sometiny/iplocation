@@ -79,7 +79,11 @@ class IpLocation
 
         $result = self::search($fd, $ipNum);
 
-        if ($charset != 'gb18030') $result['location'] = iconv('gb18030', $charset, $result['location']);
+        if ($charset != 'gb18030') {
+            $result['location'] = iconv('gb18030', $charset, $result['location']);
+            $result['country'] = iconv('gb18030', $charset, $result['country']);
+            $result['area'] = iconv('gb18030', $charset, $result['area']);
+        }
 
         $result['ip'] = long2ip($ipNum);
 
