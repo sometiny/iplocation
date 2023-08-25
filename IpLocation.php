@@ -1,7 +1,7 @@
 <?php
-namespace Jazor\IpLocation;
+namespace Jazor;
 
-class Ip
+class IpLocation
 {
     private static string $database = __DIR__ . '/qqwry.dat';
 
