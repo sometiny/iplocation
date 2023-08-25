@@ -1,0 +1,22 @@
+{
+  "name": "jazor/iplocation",
+  "description": "read iplocation from qqwry",
+  "keywords": [
+    "ip",
+    "location"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "anlige"
+    }
+  ],
+  "require": {
+    "php": "^7.4 || ^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Jazor\\IpLocation\\": "src/"
+    }
+  }
+}
